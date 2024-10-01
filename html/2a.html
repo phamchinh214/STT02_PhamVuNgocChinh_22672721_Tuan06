@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script type="module" src="../js/bootstrap.min.js"></script>
+    <script type="module" src="../js/jquery-3.7.1.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        .container{
+          inline-size: 500px;
+          block-size: 300px;
+          background-color: rgb(247,250,255);
+        }
+        .table{
+          margin-block-end: 80px;
+        }
+        h6{
+          font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col"  style="border: none;" >Checkout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-block-end: none;">
+                <th scope="row">Product 1
+                    <h6 class="text-secondary"> Lorem ipsum dolor sit amet</h6>
+                </th>
+                <td >$200</td>
+              </tr>
+              <tr>
+                <th scope="row" style="border: none;">Product 2
+                  <h6 class="text-secondary"> Lorem ipsum dolor sit amet</h6>
+              </th>
+                <td style="border: none;">$120</td>
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td>$320</td>
+              </tr>
+            </tbody>
+          </table>
+<!-- ------------------------------------------------------------------------- -->
+<table class="table">
+  <thead>
+      <tr>
+          <th scope="col" style="border: none;">Credit Card Details</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr style="border-block-end: none;">
+          <th scope="row">
+              <h6 class="text-secondary">CARD HOLDER</h6>
+              <label><input class="form-control" type="text" placeholder="Card Holder" style="inline-size: 250px;"></label>
+          </th>
+          <td>
+              <h6 class="text-secondary">EXPIRATION DATE</h6>
+              <label class="form-inline mt"><input class="form-control" type="text" placeholder="MM" style="inline-size: 60px;" required> /<input class="form-control" type="text" placeholder="YY" style="inline-size: 60px;"></label>
+          </td>
+      </tr>
+      <tr>
+          <th scope="row" style="border: none;">
+              <h6 class="text-secondary">CARD NUMBER</h6>
+              <label><input class="form-control" type="text" placeholder="Card Number" style="inline-size: 250px;"></label>
+          </th>
+          <td style="border: none;">
+              <h6 class="text-secondary">CVC</h6>
+              <label><input class="form-control" type="text" placeholder="CVC" style="inline-size: 100px;"></label>
+          </td>
+          <tr>
+           <td colspan="2" style="border: none;"><button type="button" class="btn btn-primary btn-lg btn-block">Proceed</button></td> 
+          </tr>
+      </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>
